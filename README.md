@@ -138,3 +138,7 @@ Para las rutas que requieren autenticación, se debe incluir un token JWT en el 
 
 Ejemplo:
 `Authorization: Bearer YOUR_JWT_TOKEN`
+{
+	"email": "mpalacios@gmail.com",
+	"password": "mpalacios"
+}
