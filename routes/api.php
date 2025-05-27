@@ -35,9 +35,7 @@ Route::get('/categories', [CategoriesController::class, 'index'])->name('categor
 Route::get('/categories/{id}/products', [CategoriesController::class, 'productsByCategory'])->name('categories.productsByCategory');
 
 Route::middleware(['auth:api', 'api'])->group(function () {
-
-    Route::get('clinic/listar', [ListClinicController::class, 'list']);
-
+    
     // ShoppingCart
     Route::get('/shoppingcart', [ShoppingCartController::class, 'index'])->name('shoppingcart.index');
     Route::post('/shoppingcart', [ShoppingCartController::class, 'store'])->name('shoppingcart.store');
