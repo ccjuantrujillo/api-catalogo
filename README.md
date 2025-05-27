@@ -3,73 +3,70 @@
 ## Requisitos
 
 ```sh
-- Php 7.4
+- Php 8
 - MariaDB 10
-- Laravel 7
-- Nodejs 18
+- Laravel 10
+- Nodejs 20
 ```
 ## Instalación
 
-- Clonamos el repositorio
+### Clonamos el repositorio
 
 ```sh
 git clone https://github.com/ccjuantrujillo/api-catalogo.git
 ```
 
-- Instalamos las dependencias de PHP
+### Instalamos las dependencias de PHP
 
 ```sh
 composer install
 ```
 
-- Instalamos dependencias NPM
+### Instalamos dependencias NPM
 
 ```sh
 npm ci
 ```
 
-- Construimos el assets
+### Construimos el assets
 
 ```sh
 npm run dev
 ```
 
-- Instalamos el archivo de configuracion y configuramos la base de datos
+### Instalamos el archivo de configuracion y configuramos la base de datos
 
 ```sh
 cp .env.example .env
 ```
 
-- Generamos una llave para la aplicacion
+### Generamos una llave para la aplicacion
 
 ```sh
 php artisan key:generate
 ```
 
-- Ejecutamos las migraciones
+### Ejecutamos las migraciones
 
 ```sh
 php artisan migrate
 ```
 
-- Ejecutamos los seeders
+### Ejecutamos los seeders
 
 ```sh
 php artisan db:seed
 ```
 
-- Ejecutamos el servidor
+### Ejecutamos el servidor
 
 ```sh
 php artisan serve
 ```
-## Comprobamos las rutas de la API
-
-Esta es la documentación de la API para la gestión de un sistema de e-commerce.
 
 ## Rutas de la API
 
-### 1. Autenticación (Usuarios y Administradores)
+### Autenticación (Usuarios y Administradores)
 
 | Método | Endpoint          | Descripción                                 |
 | :----- | :---------------- | :------------------------------------------ |
@@ -78,7 +75,7 @@ Esta es la documentación de la API para la gestión de un sistema de e-commerce
 | `POST` | `/api/logout`     | Cierre de sesión (requiere token de auth) |
 | `GET`  | `/api/profile`    | Obtener perfil del usuario autenticado      |
 
-### 2. Productos (Acceso Público)
+### Productos (Acceso Público)
 
 | Método | Endpoint                   | Descripción                           |
 | :----- | :------------------------- | :------------------------------------ |
@@ -87,7 +84,7 @@ Esta es la documentación de la API para la gestión de un sistema de e-commerce
 | `GET`  | `/api/categorias`          | Listar todas las categorías           |
 | `GET`  | `/api/categorias/{id}/productos` | Listar productos por categoría      |
 
-### 3. Carrito de Compras (Requiere Autenticación)
+### Carrito de Compras (Requiere Autenticación)
 
 | Método   | Endpoint                  | Descripción                                   |
 | :------- | :------------------------ | :-------------------------------------------- |
@@ -97,7 +94,7 @@ Esta es la documentación de la API para la gestión de un sistema de e-commerce
 | `DELETE` | `/api/carrito/eliminar`   | Eliminar un producto del carrito              |
 | `DELETE` | `/api/carrito/vaciar`     | Vaciar todo el contenido del carrito          |
 
-### 4. Pedidos (Requiere Autenticación)
+### Pedidos (Requiere Autenticación)
 
 | Método | Endpoint             | Descripción                              |
 | :----- | :------------------- | :--------------------------------------- |
@@ -105,9 +102,9 @@ Esta es la documentación de la API para la gestión de un sistema de e-commerce
 | `GET`  | `/api/pedidos`       | Listar todos los pedidos del usuario autenticado |
 | `GET`  | `/api/pedidos/{id}`  | Ver detalles de un pedido específico del usuario |
 
-### 5. Panel Administrativo (Solo Administradores)
+### Panel Administrativo (Solo Administradores)
 
-#### 📦 Gestión de Productos
+#### Gestión de Productos
 
 | Método   | Endpoint                      | Descripción                           |
 | :------- | :---------------------------- | :------------------------------------ |
@@ -116,7 +113,7 @@ Esta es la documentación de la API para la gestión de un sistema de e-commerce
 | `PUT`    | `/api/admin/productos/{id}`   | Actualizar un producto existente      |
 | `DELETE` | `/api/admin/productos/{id}`   | Eliminar un producto                  |
 
-#### 🗂 Gestión de Categorías
+#### Gestión de Categorías
 
 | Método   | Endpoint                      | Descripción                           |
 | :------- | :---------------------------- | :------------------------------------ |
@@ -125,7 +122,7 @@ Esta es la documentación de la API para la gestión de un sistema de e-commerce
 | `PUT`    | `/api/admin/categorias/{id}`  | Actualizar una categoría existente    |
 | `DELETE` | `/api/admin/categorias/{id}`  | Eliminar una categoría                |
 
-#### 📋 Gestión de Pedidos
+#### Gestión de Pedidos
 
 | Método | Endpoint                          | Descripción                         |
 | :----- | :-------------------------------- | :---------------------------------- |
