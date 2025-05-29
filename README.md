@@ -108,27 +108,27 @@ php artisan serve
 
 | Método   | Endpoint                      | Descripción                           |
 | :------- | :---------------------------- | :------------------------------------ |
-| `GET`    | `/api/admin/productos`        | Listar todos los productos            |
-| `POST`   | `/api/admin/productos`        | Crear un nuevo producto               |
-| `PUT`    | `/api/admin/productos/{id}`   | Actualizar un producto existente      |
-| `DELETE` | `/api/admin/productos/{id}`   | Eliminar un producto                  |
+| `GET`    | `/api/admin/products`        | Listar todos los productos            |
+| `POST`   | `/api/admin/products`        | Crear un nuevo producto               |
+| `PUT`    | `/api/admin/products/{id}`   | Actualizar un producto existente      |
+| `DELETE` | `/api/admin/products/{id}`   | Eliminar un producto                  |
 
 #### Gestión de Categorías
 
 | Método   | Endpoint                      | Descripción                           |
 | :------- | :---------------------------- | :------------------------------------ |
-| `GET`    | `/api/admin/categorias`       | Listar todas las categorías           |
-| `POST`   | `/api/admin/categorias`       | Crear una nueva categoría             |
-| `PUT`    | `/api/admin/categorias/{id}`  | Actualizar una categoría existente    |
-| `DELETE` | `/api/admin/categorias/{id}`  | Eliminar una categoría                |
+| `GET`    | `/api/admin/categories`       | Listar todas las categorías           |
+| `POST`   | `/api/admin/categories`       | Crear una nueva categoría             |
+| `PUT`    | `/api/admin/categories/{id}`  | Actualizar una categoría existente    |
+| `DELETE` | `/api/admin/categories/{id}`  | Eliminar una categoría                |
 
 #### Gestión de Pedidos
 
 | Método | Endpoint                          | Descripción                         |
 | :----- | :-------------------------------- | :---------------------------------- |
-| `GET`  | `/api/admin/pedidos`              | Ver todos los pedidos               |
-| `GET`  | `/api/admin/pedidos/{id}`         | Ver detalles de un pedido específico |
-| `PUT`  | `/api/admin/pedidos/{id}/estado`  | Cambiar el estado de un pedido      |
+| `GET`  | `/api/admin/orders`              | Ver todos los pedidos               |
+| `GET`  | `/api/admin/orders/{id}`         | Ver detalles de un pedido específico |
+| `PUT`  | `/api/admin/orders/{id}/estado`  | Cambiar el estado de un pedido      |
 
 ---
 
