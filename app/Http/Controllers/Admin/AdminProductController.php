@@ -10,7 +10,7 @@ class AdminProductController extends Controller
 {
     public function index()
     {
-        $products = Product::all();
+        $products = Product::with('category')->get();
         return response()->json($products, 200);
     }
 
